@@ -33,9 +33,6 @@ public class Order implements Serializable {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "number='" + number + '\'' +
-                ", date=" + date +
-                '}';
+        return String.format("Order[number=%s, date=%tF]", number, date);
     }
 }

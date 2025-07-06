@@ -53,11 +53,7 @@ public class Customer implements Serializable {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", address='" + address + '\'' +
-                ", orderList=" + orderList +
-                '}';
+        return String.format("Customer[name=%s, phone=%s, address=%s, Orders=%s]",
+                name, phone, address, orderList);
     }
 }
